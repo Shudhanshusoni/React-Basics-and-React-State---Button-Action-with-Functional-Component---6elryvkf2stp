@@ -3,12 +3,12 @@ import "./../styles/App.css";
 
 function App() {
   const [click,setClick]=useState();
-  
+  let text = "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy";
   return (
     <div id="main">
       // Do not alter the main div
-      <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>
       <button id='click' onClick={()=>setClick(!click)}>CLICK</button>
+      <h6 id="para">{text}</h6>
     </div>
   );
 }
